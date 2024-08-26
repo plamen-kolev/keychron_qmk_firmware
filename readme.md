@@ -1,3 +1,10 @@
+# TLDR
+
+Build and Flash
+` make keychron/k3_max/ansi/rgb:default:flash`
+Only compile, and check for errors
+`qmk compile -kb keychron/k3_max/ansi/rgb -km default`
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
