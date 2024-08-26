@@ -16,6 +16,9 @@
 
 #pragma once
 
+#define TAPPING_TERM 250
+#define MOUSEKEY_TIME_TO_MAX 60
+#define RGBLIGHT_DEFAULT_ON false
 #ifdef RGB_MATRIX_ENABLE
 /* RGB Matrix driver configuration */
 #    define DRIVER_COUNT 2

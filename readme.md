@@ -1,3 +1,8 @@
+`git checkout origin/wireless_playground`   
+`qmk compile -kb keychron/k3_max/ansi/rgb -km default`   
+`make git-submodule`   
+`make keychron/k3_max/ansi/rgb:default:flash`  
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
