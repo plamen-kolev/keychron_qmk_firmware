@@ -1,5 +1,8 @@
 # TLDR
 
+Change to
+`git checkout origin/wireless_playground`
+
 Build and Flash
 ` make keychron/k3_max/ansi/rgb:default:flash`
 Only compile, and check for errors
