@@ -63,7 +63,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           KC_ESCAPE,     KC_Q,                    KC_W,               KC_F,                   KC_P,                               KC_B,                         KC_NO,              KC_NO,         KC_J,                              KC_L,                         KC_U,                         KC_Y,                    KC_SEMICOLON,  KC_NO,    KC_NO,         RGB_TOG,
           KC_NO,         KC_A,                    MT(MOD_LSFT, KC_R), MT(MOD_LCTL, KC_S),     MT(MOD_LALT, KC_T),                 KC_G,                         KC_NO,              KC_NO,         KC_M,                              MT(MOD_RALT, KC_N),           MT(MOD_RCTL, KC_E),           MT(MOD_RSFT, KC_I),      KC_O,          KC_NO,    KC_NO,
           KC_NO,         LT(NUMPAD_LEFT, KC_Z),   KC_X,               KC_C,                   KC_D,                               KC_V,                         KC_NO,              KC_NO,         KC_K,                              KC_H,                         KC_COMMA,                     KC_DOT,                  KC_SLASH,      KC_NO,    KC_NO,
-          KC_NO,         KC_NO,                   KC_NO,              KC_NO,                  LT(NAVIGATION, KC_SPACE),           LT(NUMPAD_LEFT, KC_TAB),      KC_NO,              KC_NO,         KC_BACKSPACE,  LT(NUMPAD_RIGHT,  KC_ENTER),       KC_NO,                        KC_NO,                        KC_NO,                   KC_NO,
+          KC_NO,         KC_NO,                   KC_NO,              KC_NO,                  LT(NAVIGATION, KC_SPACE),           LT(NUMPAD_LEFT, KC_TAB),      KC_NO,              KC_NO,         KC_BACKSPACE,                      LT(NUMPAD_RIGHT,  KC_ENTER),  KC_NO,                        KC_NO,                   KC_NO,         KC_NO,
           KC_NO,         KC_NO,                   KC_NO,              KC_NO,                  KC_NO,                              KC_NO,                        KC_NO,              KC_NO,         KC_NO,                             KC_NO,                        KC_NO,                        KC_NO,                   KC_NO,         KC_2,
           KC_NO,         KC_NO,                   KC_NO,              KC_NO,                  KC_NO,                              KC_NO,                        KC_NO,              KC_NO,         KC_NO,                             TG(MAC_COLEMAK_DH)
      ),
@@ -72,16 +72,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      [MAC_COLEMAK_DH] = LAYOUT_ansi_84(
           KC_TRNS,       KC_TRNS,  KC_TRNS,            KC_TRNS,                 KC_TRNS,                      KC_TRNS,                 KC_TRNS,    KC_TRNS,    KC_TRNS,                  KC_TRNS,                 KC_TRNS,                 KC_TRNS,            KC_TRNS,  KC_TRNS,  KC_TRNS,    RGB_TOG,
           KC_TRNS,       KC_TRNS,  MT(MOD_LCTL, KC_R), MT(MOD_LALT, KC_S),      MT(MOD_LGUI, KC_T),           KC_TRNS,                 KC_TRNS,    KC_TRNS,    KC_TRNS,                  MT(MOD_RGUI, KC_N),      MT(MOD_RALT, KC_E),      MT(MOD_RCTL, KC_I), KC_TRNS,  KC_TRNS,  KC_TRNS,
-          KC_TRNS,       KC_TRNS,  KC_TRNS,            KC_TRNS,                 KC_TRNS,                      LT(NUMPAD_RIGHT, KC_V), KC_TRNS,    KC_TRNS,    KC_TRNS,                  KC_TRNS,                 KC_TRNS,                 KC_TRNS,            KC_TRNS,  KC_TRNS,  KC_TRNS,
-          KC_TRNS,       KC_TRNS,  KC_TRNS,            KC_TRNS,                 LT(NAVIGATION, KC_SPACE),      KC_TRNS,                 KC_TRNS,    KC_TRNS,    LT(NUMPAD_RIGHT, KC_ENTER),  KC_TRNS,                 KC_TRNS,                 KC_TRNS,            KC_TRNS,  KC_TRNS,
+          KC_TRNS,       KC_TRNS,  KC_TRNS,            KC_TRNS,                 KC_TRNS,                      LT(NUMPAD_RIGHT, KC_V),  KC_TRNS,    KC_TRNS,    KC_TRNS,                  KC_TRNS,                 KC_TRNS,                 KC_TRNS,            KC_TRNS,  KC_TRNS,  KC_TRNS,
+          KC_TRNS,       KC_TRNS,  KC_TRNS,            KC_TRNS,                 KC_TRNS,                      KC_TRNS,                 KC_TRNS,    KC_TRNS,    KC_TRNS,                  KC_TRNS,                 KC_TRNS,                 KC_TRNS,            KC_TRNS,  KC_TRNS,
           KC_TRNS,       KC_TRNS,  KC_TRNS,            KC_TRNS,                 KC_TRNS,                      KC_TRNS,                 KC_TRNS,    KC_TRNS,    KC_TRNS,                  KC_TRNS,                 KC_TRNS,                 KC_TRNS,            KC_TRNS,  KC_3,
           KC_TRNS,       KC_TRNS,  KC_TRNS,            KC_TRNS,                 KC_TRNS,                      KC_TRNS,                 KC_TRNS,    KC_TRNS,    KC_TRNS,                  TO(COLEMAK_DH)
      ),
 
      // navigation
      [NAVIGATION] = LAYOUT_ansi_84(
-          KC_ESCAPE,  QK_GRAVE_ESCAPE, KC_HOME,        KC_UP,    KC_END,   KC_PAGE_UP,    KC_NO,    KC_NO,    KC_TRNS,  KC_BTN1,  KC_MS_U,  KC_LEFT_BRACKET,  KC_RIGHT_BRACKET,    KC_NO,    KC_NO,  RGB_TOG,
-          KC_NO,  KC_TAB,          KC_LEFT,            KC_DOWN,  KC_RIGHT, KC_PAGE_DOWN,  KC_NO,    KC_NO,    KC_TRNS,  KC_MS_L,  KC_MS_D,  KC_MS_R,  KC_QUOTE,    KC_NO,    KC_NO,
+          KC_ESCAPE,  QK_GRAVE_ESCAPE, KC_HOME,        KC_UP,    KC_END,   KC_PAGE_UP,    KC_NO,    KC_NO,    KC_TRNS,  KC_BTN1,  KC_MS_U,  KC_BTN2,  KC_NO,    KC_NO,    KC_NO,  RGB_TOG,
+          KC_NO,  KC_TAB,          KC_LEFT,            KC_DOWN,  KC_RIGHT, KC_PAGE_DOWN,  KC_NO,    KC_NO,    KC_TRNS,  KC_MS_L,  KC_MS_D,  KC_MS_R,  KC_NO,    KC_NO,    KC_NO,
           KC_NO,  KC_NO,           KC_NO,              KC_NO,    KC_NO,    KC_NO,         KC_NO,    KC_NO,    KC_BTN2,    KC_NO,    KC_9,    KC_0,    KC_NO,    KC_NO,    KC_NO,
           KC_NO,  KC_NO,           KC_NO,              KC_NO,    KC_NO,    KC_NO,         KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,
           KC_NO,  KC_NO,           KC_NO,              KC_NO,    KC_NO,    KC_NO,         KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_4,
@@ -99,12 +99,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      ),
 
      [NUMPAD_LEFT] = LAYOUT_ansi_84(
-          KC_ESCAPE,     KC_NO,         KC_1,    KC_2,    KC_3,    KC_NO,         KC_NO,    KC_NO,    KC_TRNS,  KC_EXLM,  KC_AT,  KC_HASH,  KC_NO,    KC_NO,    KC_NO,  RGB_TOG,
-          KC_NO,         KC_NO,         KC_4,    KC_5,    KC_6,    KC_NO,         KC_NO,    KC_NO,    KC_NO,    KC_DLR,   KC_PERC,  KC_CIRC,  KC_NO,    KC_NO,    KC_NO,
-          KC_NO,         KC_NO,         KC_7,    KC_8,    KC_9,    KC_NO,         KC_NO,    KC_NO,    KC_NO,    KC_AMPR,  KC_ASTR,    KC_NO,    KC_NO,    KC_NO,    KC_NO,
-          KC_NO,         KC_NO,         KC_NO,    KC_NO,    KC_0,    KC_NO, KC_NO,    KC_NO,    KC_MINS,    KC_EQL,    KC_NO,    KC_NO,    KC_NO,    KC_NO,
-          KC_NO,         KC_NO,         KC_NO,    KC_NO,    KC_NO,    KC_NO,         KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_5,
-          KC_NO,         KC_NO,         KC_NO,    KC_NO,    KC_NO,    KC_NO,         KC_NO,    KC_NO,    KC_NO,    KC_NO
+          KC_ESCAPE,     KC_NO,         KC_1,     KC_2,     KC_3,     KC_LEFT_CURLY_BRACE,          KC_NO,    KC_NO,    KC_RIGHT_CURLY_BRACE,         KC_EXLM,       KC_AT,    KC_HASH,            KC_NO,    KC_NO,    KC_NO,  RGB_TOG,
+          KC_NO,         KC_NO,         KC_4,     KC_5,     KC_6,     KC_LEFT_BRACKET,              KC_NO,    KC_NO,    KC_RIGHT_BRACKET,             KC_DLR,        KC_PERC,  KC_CIRC,            KC_NO,    KC_NO,    KC_NO,
+          KC_NO,         KC_NO,         KC_7,     KC_8,     KC_9,     KC_LEFT_PAREN,                KC_NO,    KC_NO,    KC_RIGHT_PAREN,               KC_AMPR,       KC_ASTR,  KC_UNDERSCORE,      KC_NO,    KC_NO,    KC_NO,
+          KC_NO,         KC_NO,         KC_NO,    KC_NO,    KC_0,     KC_NO,                        KC_NO,    KC_NO,    KC_MINS,                      KC_EQL,        KC_NO,    KC_NO,              KC_NO,    KC_NO,
+          KC_NO,         KC_NO,         KC_NO,    KC_NO,    KC_NO,    KC_NO,                        KC_NO,    KC_NO,    KC_NO,                        KC_NO,         KC_NO,    KC_NO,              KC_NO,    KC_5,
+          KC_NO,         KC_NO,         KC_NO,    KC_NO,    KC_NO,    KC_NO,                        KC_NO,    KC_NO,    KC_NO,                        KC_NO
      ),
      [EXPERIMENTAL] = LAYOUT_ansi_84(
           TO(QUERTY),     DF(COLEMAK_DH),     KC_TRNS,     KC_TRNS,               KC_TRNS,               KC_TRNS,          KC_TRNS,    KC_TRNS,    KC_TRNS,               KC_TRNS,               KC_TRNS,                    KC_TRNS,     KC_TRNS,          KC_TRNS,    KC_TRNS,    RGB_TOG,
